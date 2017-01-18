@@ -6,8 +6,17 @@ Here are the things that you can find in this repository
   2. run_analysis.R: script that perform analysis and create the tidy data set
   3. TidyDataSet.txt: a tidy data set from run_analysis.R
   4. readme.md, which is what you are reading now
-  
+
+Here are the instruction for run_analysis.R
+  1. Merges the training and the test sets to create one data set.
+  2. Extracts only the measurements on the mean and standard deviation for each measurement.
+  3. Uses descriptive activity names to name the activities in the data set
+  4. Appropriately labels the data set with descriptive variable names.
+  5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+From the code snippet below, point## is indicative to the point above
+
 #Code Walkthrough
+Here is the code walkthrough to [run_analysis.R](https://github.com/grosbusen/GettingAndCleaningDataAssignment/blob/master/run_analysis.R)
 The first step you need to do is to install.packages like dplyr and tidyr as the script needs it, however for simplicity sake and compatibility issue, it is not in the script attached here, so please load all the require library on your own.
 Please also set up working directory at your own as each working directory is different
 The following the walkthrough of the attached scripts
@@ -76,6 +85,7 @@ The following the walkthrough of the attached scripts
                        grepl("ActivityID", features1$V2) |
                        grepl("SubjectID", features1$V2)  |
                        grepl("std",features1$V2) 
+  mydf_mean_std <- mydf[,mean_stddev_index]                       
   ```
   7. Apply a appropriate labels to the data set measurement with descriptive variable names from features data frame. 
   

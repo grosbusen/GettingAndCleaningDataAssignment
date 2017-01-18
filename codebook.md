@@ -1,5 +1,5 @@
 #Tidy Data Set information
-The available [tidy data set](https://github.com/grosbusen/datasciencecoursera/blob/master/TidyDataSet.md) is a set consists of 30 subject, each subject did 6 activities 
+The available [tidy data set](https://github.com/grosbusen/GettingAndCleaningDataAssignment/blob/master/TidyDataSet.txt) is a set consists of 30 subject, each subject did 6 activities 
 and every single combination of subject and activity is measured using accelerometers and gyroscopes from the Samsung Galaxy S smartphone.
 <br>The calculated dataset is a collection of average of each measurement for each activity and each subject. Each measurement is either a mean or standard deviation of the measurement as in Raw Data
 <br>The raw data is taken from [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
